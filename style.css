@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    font-family: Iato;
+    color: #2c3e50;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Poppins';
+}
+svg {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+div.heros, div.about-me, div.contact-me{
+    background-color:#cfff99;
+    background-image:
+        radial-gradient(at 67% 92%, hsla(180,49%,81%,1) 0px, transparent 50%),
+        radial-gradient(at 7% 4%, hsla(202,52%,36%,1) 0px, transparent 50%),
+        radial-gradient(at 81% 87%, hsla(242,27%,20%,1) 0px, transparent 50%),
+        radial-gradient(at 22% 78%, hsla(263,0%,100%,1) 0px, transparent 50%),
+        radial-gradient(at 42% 29%, hsla(176,51%,92%,1) 0px, transparent 50%);
+}
+
+
+li.nav-item:hover {
+    border-bottom: 1px solid #263238;
+}
+
+button.important-btn {
+    display: block;
+    position: relative;
+    height: max-content;
+    transition: all ease-out .6s;
+    overflow: hidden;
+}
+
+button.important-btn span {
+    transition: all ease-out .6s;
+    z-index: 3;
+}
+button.important-btn span::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 4px;
+    background-color: #2c3e50;
+    transition: all ease-out .6s;
+    opacity: 0;
+    z-index: 0;
+}
+
+.important-btn:hover span::before {
+    opacity: 1;
+    width: 100%;
+}
+
+
+div.skills-container {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: calc(30% - 10px) calc(30% - 10px) calc(30% - 10px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.customized-bottom span{
+    position: relative;
+}
+
+.carousel .active  {
+    border: 1px solid #2632382c;
+    padding: 1px;
+    border-radius: .3em;
+}
+
+.customized-bottom span::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    width: 50px;
+    height: 3px;
+    z-index: 10;
+    background-color: #2c3e50;
+}
+
+div.skills-container button.skill .logo {
+    width: 50px;
+    height: 50px;
+}
+
+svg {
+    width: 50px;
+    height: 50px;
+}

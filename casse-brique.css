@@ -1,0 +1,31 @@
+h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+}
+
+div.playGame{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) ;
+    z-index: 3;
+}
+
+.playGame p{
+    color: #2c3e50;
+    font-size: 21px;
+}
+
+div.casse-brique .mainContainer {
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+}
+
+div.casse-brique  .mainContainer canvas{
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #2c3e5042;
+}
