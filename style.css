@@ -33,7 +33,7 @@ li.nav-item:hover {
     border-bottom: 1px solid #263238;
 }
 
-button.important-btn {
+.important-btn {
     display: block;
     position: relative;
     height: max-content;
@@ -41,11 +41,11 @@ button.important-btn {
     overflow: hidden;
 }
 
-button.important-btn span {
+.important-btn span {
     transition: all ease-out .6s;
     z-index: 3;
 }
-button.important-btn span::before {
+.important-btn span::before {
     position: absolute;
     content: "";
     bottom: 0;
@@ -100,6 +100,12 @@ div.skills-container button.skill .logo {
 }
 
 svg {
+    width: 50px;
+    height: 50px;
+}
+
+
+div.contact-icons img {
     width: 50px;
     height: 50px;
 }
