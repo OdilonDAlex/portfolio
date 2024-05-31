@@ -4,28 +4,36 @@ const project2 = document.querySelector('#project2') ;
 const prevButton = document.querySelector('.carousel-control-prev'); 
 const nextButton = document.querySelector('.carousel-control-next'); 
 const skills = document.querySelectorAll('.skill') ;
+const titles = document.querySelectorAll('h1');
+const paragraphes = document.querySelectorAll('p');
+const btns = document.querySelectorAll('.btn');
 
+smoothReveal(titles, delay=25);
+smoothReveal(btns, delay=50);
+smoothReveal(paragraphes);
+smoothReveal(skills, delay=100, interval=75);
 
 run([project0, project1, project2]);
 
-function run( elements ) {
+function run( elements, interval=4000, timeDistance=2000) {
     
     elements.forEach( element => {
         let carousel = new bootstrap.Carousel(element, {
-            interval: 2000,
+            interval: interval,
             touch: true
         })
     
+        interval += timeDistance;
         carousel.cycle();
     });
 
  };
 
 
- function smoothReveal(elements, delay=0, interval=75){
+ function smoothReveal(elements, delay=75, interval=25){
 
     elements.forEach(element => {
-        scrollreveal().reveal(element, {delay: delay});
+        ScrollReveal().reveal(element, {delay: delay});
         delay += interval;
     })
  }
