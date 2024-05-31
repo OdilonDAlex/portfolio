@@ -1,4 +1,4 @@
-const canvas = document.querySelector("div.casse-brique .mainContainer canvas") ;
+const canvas = document.querySelector("div.casse-brique .casse-brique-mainContainer canvas") ;
 var score = document.querySelector("#score") ;
 const info = document.querySelector("div.playGame") ;
 

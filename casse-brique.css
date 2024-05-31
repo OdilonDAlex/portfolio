@@ -17,13 +17,13 @@ div.playGame{
     font-size: 21px;
 }
 
-div.casse-brique .mainContainer {
+div.casse-brique .casse-brique-mainContainer {
     position: relative;
     margin-top: 20px;
     width: 100%;
 }
 
-div.casse-brique  .mainContainer canvas{
+div.casse-brique  .casse-brique-mainContainer canvas{
     background-color: white;
     display: block;
     margin: 0 auto;
