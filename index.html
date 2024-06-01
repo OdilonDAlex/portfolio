@@ -13,13 +13,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Portfolio | Nomenjanahary Odilon D'Alex</title>
+    <script>
+        onload = function() {
+            document.querySelector('div.loading').parentNode.removeChild(document.querySelector('div.loading'));   
+        }
+    </script>
     <style>
         * {
             font-family: Poppins, sans-serif;
         }
+
+        body {
+            max-width: 1920px;
+            margin: 0 auto;
+        }
     </style>
 </head>
-<body style="max-width: 1920px; position: relative; left: 50%; transform: translateX(-50%)">
+<body>
+
+    <div class="loading w-100 h-100 d-flex flex-column justify-content-center align-items-center position-fixed top-0 start-0 bg-light" style="z-index: 20;">
+        <div class="spinner-border text-secondary" role="status">
+            <span class="visually-hidden">Loading...</span>
+
+            <br>
+        </div>
+        <p class="fs-6 mt-3 text-secondary">
+            Chargement en cours, veuillez patienter s'il vous plait ...
+        </p>
+    </div>
 
     <div id="hero" class="heros container-fluid row vh-100 d-flex flex-column justify-content-center align-items-center w-100 m-0 pb-5">
         <div class="welcome-hero w-75">
@@ -31,7 +52,7 @@
     
     <div class="skills container-fluid mx-0 py-5">
         <h1 class="display-2 customized-bottom text-center mb-5"><span>Mes compétences</span></h1>
-        <p class="mx-auto d-block" style="width: 65ch; text-indent: 50px;">Vous trouverez ci-dessous un aperçu de mes compétences techniques. Bien que je me spécialise dans le développement backend pour le web, je suis également tout à fait compétent en intégration frontend.</p>
+        <p class="mx-auto d-block" style="width: 65ch; max-width: 100%; text-indent: 50px;">Vous trouverez ci-dessous un aperçu de mes compétences techniques. Bien que je me spécialise dans le développement backend pour le web, je suis également tout à fait compétent en intégration frontend.</p>
         <div class="mx-auto row" style="width: max-content;">
             <a  href="#personnal-projects" role="button" class="btn me-1 me-md-5 col-6 btn-transparent rounded-0 px-1 px-md-5 py-2 mx-auto mb-5 d-block important-btn" style="width: max-content; border: 1px solid #2c3e50;"><span>Mes projets perso</span></a >
             <a href="./CV.pdf" target="_blank" class="btn col-6 btn-transparent rounded-0 px-1 px-md-5 py-2 mx-auto mb-5 d-block important-btn" style="width: max-content; border: 1px solid #2c3e50; background-color: #2c3e50;"><span class="text-light">Télécharger mon CV</span></a>
@@ -148,7 +169,7 @@
 
     <div id="about-me" class="about-me container-fluid pb-5">
         <h1 class="display-2 customized-bottom text-center my-5"><span>A propos de moi</span></h1>
-        <p class="mx-auto" style="width: 65ch; text-indent: 50px;">Je suis étudiant en troisième année de licence en mathématiques et informatique à la Faculté des Sciences et Technologies de l'Université. Passionné par les mathématiques et l'informatique, j'adore le codage et l'analyse des données.</p>
+        <p class="mx-auto" style="width: 65ch; max-width: 100%; text-indent: 50px;">Je suis étudiant en troisième année de licence en mathématiques et informatique à la Faculté des Sciences et Technologies de l'Université. Passionné par les mathématiques et l'informatique, j'adore le codage et l'analyse des données.</p>
         <a href="#contact-me" role="button" class="btn btn-transparent rounded-0 mx-auto d-block important-btn" style="width: max-content; border: 1px solid #2c3e50;"><span>mes Contacts</span></a >
     </div>
 
