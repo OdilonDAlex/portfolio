@@ -93,7 +93,7 @@ div.skills-container button.skill .logo {
     height: 50px;
 }
 
-svg {
+object, svg {
     width: 50px;
     height: 50px;
 }
