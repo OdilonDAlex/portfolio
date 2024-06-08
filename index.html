@@ -31,17 +31,22 @@
 </head>
 <body>
 
+    <!-- debut-loading-page -->
     <div class="loading w-100 h-100 d-flex flex-column justify-content-center align-items-center position-fixed top-0 start-0 bg-light" style="z-index: 20;">
         <div class="spinner-border text-secondary" role="status">
             <span class="visually-hidden">Loading...</span>
-
+            
             <br>
         </div>
         <p class="fs-6 mt-3 text-secondary">
             Chargement en cours, veuillez patienter s'il vous plait ...
         </p>
     </div>
-
+    <!-- fin-loading-page -->
+    
+    
+    
+    <!-- debut-section-hero -->
     <div id="hero" class="heros container-fluid row vh-100 d-flex flex-column justify-content-center align-items-center w-100 m-0 pb-5">
         <div class="welcome-hero w-75">
             <h1 class="display-7 fw-regular ms-1 ms-md-5" style="color: #2c3e50;">Bonjour, je suis un développeur python, et web fullstack. <br>Bienvenue sur mon Portfolio</h1>
@@ -49,7 +54,11 @@
             <a  href="#about-me" role="button" class="btn btn-transparent rounded-0 ms-1 ms-md-5 px-5 py-2 important-btn" style="width: max-content; border: 1px solid #2c3e50;"><span>A propos de moi</span></a>
         </div>
     </div>
+    <!-- fin-section-hero -->
     
+
+    
+    <!-- debut-section-competence -->
     <div class="skills container-fluid mx-0 py-5">
         <h1 class="display-2 customized-bottom text-center mb-5"><span>Mes compétences</span></h1>
         <p class="mx-auto d-block" style="width: 65ch; max-width: 100%; text-indent: 50px;">Vous trouverez ci-dessous un aperçu de mes compétences techniques. Bien que je me spécialise dans le développement backend pour le web, je suis également tout à fait compétent en intégration frontend.</p>
@@ -66,7 +75,7 @@
                     <button class="skill btn btn-transparent border-none">                        
                         <object data="./assets/logo/html.svg"></object>
                     <br>HTML 5</button>
-
+                    
                     <button class="skill btn btn-transparent border-none">                        
                         <object data="./assets/logo/css.svg"></object>
                     <br>CSS 3</button>
@@ -74,7 +83,7 @@
                     <button class="skill btn btn-transparent border-none">
                         <object data="./assets/logo/javascript.svg"></object>
                     <br>Javascript</button>
-
+                    
                     <button class="skill btn btn-transparent border-none">
                         <object data="./assets/logo/php.svg"></object>
                     <br>PHP</button>
@@ -128,7 +137,7 @@
         </div>
 
     </div>
-
+    
     <div class="container-fluid row mx-2">
         <h1 class="display-6 px-5 fw-regular mb-3 text-center text-center my-3 my-md-1"><span class="px-5">Technologies que j'ai déjà utilisées et que je peux facilement réapprendre si nécessaire.</span></h1>
         <div class="skills-container" style="grid-template-columns: auto auto auto auto; column-gap: 50px;">
@@ -159,13 +168,19 @@
             </button>
         </div>
     </div>
-
+    <!-- fin-section-competence -->
+    
+    
+    <!-- debut-section-apropos-de-moi -->
     <div id="about-me" class="about-me container-fluid pb-5">
         <h1 class="display-2 customized-bottom text-center my-5"><span>A propos de moi</span></h1>
         <p class="mx-auto" style="width: 65ch; max-width: 100%; text-indent: 50px;">Je suis étudiant en troisième année de licence en mathématiques et informatique à la Faculté des Sciences et Technologies de l'Université. Passionné par les mathématiques et l'informatique, j'adore le codage et l'analyse des données.</p>
         <a href="#contact-me" role="button" class="btn btn-transparent rounded-0 mx-auto d-block important-btn" style="width: max-content; border: 1px solid #2c3e50;"><span>mes Contacts</span></a >
     </div>
+    <!-- fin-section-apropos-de-moi -->
+    
 
+    <!-- debut-section-projects -->
     <h1 id="personnal-projects" class="display-3 text-center customized-bottom"><span>Mes projets perso</span></h1>
     <div class="container-fluid row projects p-5">
         <div class="col-12 col-md-7 carousel slide d-flex flex-column justify-content-center align-items-center" id="project0">
@@ -177,8 +192,8 @@
                 <button type="button" data-bs-target="#project0" data-bs-slide-to="2" aria-label="Slide 3"></button>
               </div>
 
-            <div class="carousel-inner">
-                <div class="carousel-item" data-bs-interval="5000">
+              <div class="carousel-inner">
+                  <div class="carousel-item" data-bs-interval="5000">
                     <img class="d-block w-100" src="./assets/e-commerce/0.png">
                 </div>
                 <div class="carousel-item" data-bs-interval="4000">
@@ -359,6 +374,10 @@
     </div>
     <h1 class="d-block d-md-none display-7 fs-6 text-center text-warning">indisponible sur votre appareil.</h1>
 
+    <!-- fin-section-projects -->
+
+
+    <!-- debut-section-contact -->
     <div id="contact-me" class="contact-me container-fluid py-2 position-relative mt-5">
 
         <a href="#hero" class="position-absolute btn btn-transparent border" style="border-radius: .3em .3em 0 0; left: 50%; transform: translateX(-50%); top: -15px; backdrop-filter: blur(30px);">&UpArrow;</a>
@@ -396,6 +415,8 @@
         
         <p class="text-center mt-4 mb-0">&copy; copyright 2024</p>
     </div>
+    <!-- fin-section-contact -->
+
 
     <script src="./script/app.js"></script>
 </body>
