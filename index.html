@@ -183,6 +183,163 @@
     <!-- debut-section-projects -->
     <h1 id="personnal-projects" class="display-3 text-center customized-bottom"><span>Mes projets perso</span></h1>
     <div class="container-fluid row projects p-5">
+        <div class="col-12 col-md-7 carousel slide d-flex flex-column justify-content-center align-items-center" id="project3">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#project3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#project3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                
+                <button type="button" data-bs-target="#project3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+                <button type="button" data-bs-target="#project3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+                <button type="button" data-bs-target="#project3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                
+                <button type="button" data-bs-target="#project3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                
+                <button type="button" data-bs-target="#project3" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              </div>
+
+              <div class="carousel-inner">
+                  <div class="carousel-item" data-bs-interval="5000">
+                    <img class="d-block w-100" src="./assets/eduka/eduka1.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img class="d-block w-100" src="./assets/eduka/eduka2.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img class="d-block w-100" src="./assets/eduka/eduka3.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img class="d-block w-100" src="./assets/eduka/eduka4.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img class="d-block w-100" src="./assets/eduka/eduka5.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="4000">
+                    <img class="d-block w-100" src="./assets/eduka/eduka6.png">
+                </div>
+                <div class="carousel-item active" data-bs-interval="4000">
+                    <img class="d-block w-100" src="./assets/eduka/eduka7.png">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#project3" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#project3" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+            
+        </div>
+        <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+            <h1 class="display-6 fw-bold">EDUKA</h1>
+            <p style="text-indent: 50px;">EDUKA est un projet que nous avons développé lors d'un hackathon. Il s'agit d'une plateforme d'éducation sexuelle, visant principalement à sensibiliser les jeunes sur l'importance de se protéger contre les grossesses non désirées et de prévenir les dangers liés à la sexualité. L'objectif de ce projet est de contribuer à la réduction de la pauvreté engendrée par les grossesses non désirées, tout en brisant le tabou autour de l'éducation sexuelle à Madagascar. En effet, c'est un problème omniprésent qu'il est essentiel d'aborder, car tôt ou tard, il faudra en parler.</p>
+            <p><span class="fw-bold">développé par mes deux coéquipiers et moi lors de l'hackathon, où j'étais développeur backend</span></p>
+            <h5 class="display-7">Technologies utilisées</h5>
+            <ul class="list">
+                <li class="list-item">Laravel 11, Html 5, Css 3, Vanilla JavaScript</li>
+                <li class="list-item">SQlite</li>
+            </ul>
+            <div class="mx-auto row" style="width: max-content;">
+                <a target="_blank" href="https://github.com/OdilonDAlex/hackathon2024.git" class="btn btn-transparent rounded-0 px-1 px-md-5 py-2 d-block important-btn" style="width: max-content; border: 1px solid #2c3e50; background-color: #2c3e50;"><span class="text-light">Code source</span></a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-5">
+    
+    <div class="container-fluid row projects p-5">
+        <div class="col-12 col-md-5 d-flex flex-column justify-content-center">
+            <h1 class="display-6 fw-bold">Find Movies</h1>
+            <p style="text-indent: 50px;">Find Movies est une application mobile que j'ai développée avec React Native et l'API de TheMovieDB, à la fois comme exercice et projet personnel. Cette application permet de rechercher des films, consulter les détails associés à chaque film, et les ajouter dans une liste de films à regarder personnalisée. Le design de l'application a été inspiré par un design réalisé par <a target="_blank" href="https://github.com/santosfrancisco">Francisco Santos</a>, que j'ai trouvé sur Figma Community. Vous pouvez consulter le design original via ce lien : <a target="_blank" href="https://www.figma.com/community/file/1124835379376527920/movies-app">Movie App Design.</a></p>
+            <p><span class="fw-bold">Erreurs techniques commises: </span>mise en œuvre d'un nouveau tab bar au lieu d'utiliser celui intégré à React Native Expo.</p>
+            <h5 class="display-7">Technologies utilisé:  </h5>
+            <ul class="list">
+                <li class="list-item">React Native</li>
+                <li class="list-item">Typescript</li>
+                <li class="list-item">tanstack react query</li>
+                <li class="list-item">TMDB API</li>
+            </ul>
+            <div class="mx-auto row" style="width: max-content;">
+                <a target="_blank" href="./assets/find_movies/demo.mp4" class="btn btn-transparent  me-1 me-md-2 rounded-0 px-1 px-md-5 py-2 d-block important-btn" style="width: max-content; border: 1px solid #2c3e50;"><span>Voir un démo</span></a>
+                <a target="_blank" href="https://github.com/OdilonDAlex/find_movies.git" class="btn btn-transparent rounded-0 px-1 px-md-5 py-2 d-block important-btn" style="width: max-content; border: 1px solid #2c3e50; background-color: #2c3e50;"><span class="text-light">Code source</span></a>
+            </div>
+        </div>
+        <div class="col-12 col-md-7 carousel slide d-flex flex-column justify-content-center align-items-center" id="project4">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#project4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+
+                <button type="button" data-bs-target="#project4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                
+                <button type="button" data-bs-target="#project4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                
+                <button type="button" data-bs-target="#project4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                
+                <button type="button" data-bs-target="#project4" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                
+                <button type="button" data-bs-target="#project4" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                
+                <button type="button" data-bs-target="#project4" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                
+                <button type="button" data-bs-target="#project4" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                
+                <button type="button" data-bs-target="#project4" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                
+                <button type="button" data-bs-target="#project4" data-bs-slide-to="9" aria-label="Slide 10"></button>
+              </div>
+
+            <div class="carousel-inner" style="height: 95vh; width: 400px;">
+                <div class="carousel-item" data-bs-interval="6000">
+                    <img class="d-block w-100" src="./assets/find_movies/find1.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="d-block w-100" src="./assets/find_movies/find2.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="d-block w-100" src="./assets/find_movies/find3.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="d-block w-100" src="./assets/find_movies/find4.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="d-block w-100" src="./assets/find_movies/find5.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="d-block w-100" src="./assets/find_movies/find6.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="d-block w-100" src="./assets/find_movies/find7.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="d-block w-100" src="./assets/find_movies/find8.png">
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img class="d-block w-100" src="./assets/find_movies/find9.png">
+                </div>
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img class="d-block w-100" src="./assets/find_movies/find10.png">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#project4" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#project4" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+            
+        </div>
+    </div>
+
+    <hr class="my-5">
+
+    <div class="container-fluid row projects p-5">
         <div class="col-12 col-md-7 carousel slide d-flex flex-column justify-content-center align-items-center" id="project0">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#project0" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -283,6 +440,7 @@
             
         </div>
     </div>
+    
 
     <hr class="my-5">
 
