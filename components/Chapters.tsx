@@ -203,7 +203,7 @@ export default function Chapters() {
       <Chapter id="method" label="How I work" stage={{ "--py": "5rem" }}>
         <Eyebrow>How I work</Eyebrow>
         <h2 className="t-section" data-title>
-          Requirements to production
+          From spec to production
         </h2>
         <Grid min="12.5rem" max="58.75rem">
           {method.map((m) => (
@@ -218,7 +218,7 @@ export default function Chapters() {
           Working with Claude
         </h2>
         <p className="lede lede--plain" data-d>
-          Part of my daily engineering loop.
+          Part of my daily workflow.
         </p>
         <Grid min="17.5rem" max="65rem" gap="3rem">
           {claudeTools.map((t, i) => (
@@ -248,7 +248,7 @@ export default function Chapters() {
 
       <Chapter id="contact" labelledBy="contact-title" invert stage={{ "--gap": "2rem" }}>
         <h2 id="contact-title" className="eyebrow" data-d>
-          Contact · Available for freelance and remote missions
+          Contact · Open to freelance and remote work
         </h2>
         <p className="pitch" data-d>
           A platform to build, a dashboard to untangle, a process to automate? Write to me.
@@ -269,7 +269,7 @@ export default function Chapters() {
           ))}
         </nav>
         <a className="restart" data-d data-restart href="#top">
-          Start again
+          Back to top
         </a>
         <p className="footnote" data-d>
           © 2026 Odilon D’Alex Nomenjanahary · Madagascar

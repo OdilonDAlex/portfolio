@@ -7,7 +7,7 @@ import "./globals.css";
 
 const title = "Odilon D'Alex Nomenjanahary — Full-stack engineer & BI consultant";
 const description =
-  "Full-stack engineer and BI consultant based in Madagascar. Platform manager at Feety. Open to freelance and remote missions.";
+  "Full-stack engineer and BI consultant based in Madagascar (UTC+3). Developer and maintainer of Feety. Available for freelance and remote work.";
 
 export const metadata: Metadata = {
   title,
