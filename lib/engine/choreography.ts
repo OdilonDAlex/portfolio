@@ -67,10 +67,19 @@ export function scrollState(y: number, L: ChapterLayout[], H: number): ScrollSta
   };
 }
 
+// A chapter has fully left at EXIT_END; the next one starts entering at ENTER_START.
+const EXIT_END = 0.45;
+const ENTER_START = 0.5;
+
 export function chapterPhase(k: number, i: number, T: number) {
-  if (k === i) return { on: true, enter: 1, exit: smoothstep(0, 0.45, T) };
-  if (k === i + 1) return { on: true, enter: smoothstep(0.5, 1, T), exit: 0 };
+  if (k === i) return { on: true, enter: 1, exit: smoothstep(0, EXIT_END, T) };
+  if (k === i + 1) return { on: true, enter: smoothstep(ENTER_START, 1, T), exit: 0 };
   return { on: false, enter: 0, exit: 0 };
+}
+
+/** Progress of the WebGL title dissolve, kept in step with the HTML content so two chapters never overlap. */
+export function titleDissolve(T: number) {
+  return { out: clamp01(T / EXIT_END), in: clamp01((T - ENTER_START) / (1 - ENTER_START)) };
 }
 
 /** Staggered reveal of the j-th of n elements of a chapter. */

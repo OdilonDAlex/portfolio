@@ -9,6 +9,7 @@ import {
   reveal,
   scrollState,
   smoothstep,
+  titleDissolve,
   travelDuration,
 } from "./choreography";
 
@@ -103,6 +104,23 @@ describe("chapterPhase", () => {
   it("keeps every other chapter off", () => {
     expect(chapterPhase(0, 2, 0.5).on).toBe(false);
     expect(chapterPhase(4, 2, 0.5).on).toBe(false);
+  });
+});
+
+describe("titleDissolve", () => {
+  const steps = Array.from({ length: 201 }, (_, n) => n / 200);
+
+  it("rests on the current title and ends on the next one", () => {
+    expect(titleDissolve(0)).toEqual({ out: 0, in: 0 });
+    expect(titleDissolve(1)).toEqual({ out: 1, in: 1 });
+  });
+
+  it("has the current title gone before the next chapter's content enters", () => {
+    for (const T of steps) if (chapterPhase(3, 2, T).enter > 0) expect(titleDissolve(T).out).toBe(1);
+  });
+
+  it("keeps the next title hidden while the current content is still on screen", () => {
+    for (const T of steps) if (chapterPhase(2, 2, T).exit < 1) expect(titleDissolve(T).in).toBe(0);
   });
 });
 

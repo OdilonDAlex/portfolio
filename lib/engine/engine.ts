@@ -10,6 +10,7 @@ import {
   restartDuration,
   reveal,
   scrollState,
+  titleDissolve,
   travelDuration,
   type ScrollState,
 } from "./choreography";
@@ -424,7 +425,10 @@ export class Engine {
     gl.uniform2f(u("uThC"), this.theme.c[0], this.theme.c[1]);
 
     gl.uniform1f(u("uOffA"), offA);
+    const dissolve = titleDissolve(s.T);
     gl.uniform1f(u("uT"), s.T);
+    gl.uniform1f(u("uTA"), dissolve.out);
+    gl.uniform1f(u("uTB"), dissolve.in);
     gl.uniform1f(u("uTime"), t / 1000);
     gl.uniform1f(u("uZ"), s.progress);
     gl.uniform1f(u("uVel"), this.sv);

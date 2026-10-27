@@ -5,7 +5,7 @@ export const SCENE = `#extension GL_OES_standard_derivatives : enable
 precision highp float;
 varying vec2 vUv;
 uniform sampler2D uA; uniform sampler2D uB; uniform sampler2D uFlow; uniform sampler2D uDye;
-uniform float uT; uniform float uTime; uniform float uZ; uniform float uVel; uniform float uInv;
+uniform float uT; uniform float uTA; uniform float uTB; uniform float uTime; uniform float uZ; uniform float uVel; uniform float uInv;
 uniform float uAsp; uniform float uS; uniform float uLines; uniform float uInk; uniform float uOffA;
 uniform float uFrom; uniform float uTo; uniform float uThR; uniform vec2 uThC; uniform vec2 uSimTx;
 const vec3 PAPER = vec3(0.957, 0.953, 0.937);
@@ -40,7 +40,7 @@ void main(){
   } else {
     float n = fbm(vec3(p * 2.6, 3.1));
     vec2 fl = vec2(fbm(vec3(p * 2.2, uTime * 0.08)) - 0.5, fbm(vec3(p * 2.2 + 5.2, uTime * 0.08)) - 0.5);
-    float tA = clamp(uT / 0.7, 0.0, 1.0), tB = clamp((uT - 0.3) / 0.7, 0.0, 1.0);
+    float tA = uTA, tB = uTB;
     vec2 uvA = uv - lt + fl * tA * tA * 0.32 + vec2(0.0, tA * tA * 0.05);
     vec2 uvB = uv - lt - fl * (1.0 - tB) * (1.0 - tB) * 0.32 - vec2(0.0, (1.0 - tB) * (1.0 - tB) * 0.05);
     float mA = smoothstep(tA * 1.3 - 0.22, tA * 1.3, n);
