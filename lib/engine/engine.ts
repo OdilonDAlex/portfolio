@@ -1,5 +1,6 @@
 import Lenis from "lenis";
 import { scene, scroll } from "../config";
+import { cancelIdle, requestIdle } from "../idle";
 import {
   FrameGovernor,
   chapterPhase,
@@ -435,10 +436,3 @@ export class Engine {
     gl.drawArrays(gl.TRIANGLES, 0, 3);
   }
 }
-
-const hasIdle = typeof window !== "undefined" && typeof window.requestIdleCallback === "function";
-
-const requestIdle = (cb: () => void): number =>
-  hasIdle ? requestIdleCallback(cb, { timeout: 500 }) : window.setTimeout(cb, 120);
-
-const cancelIdle = (id: number) => (hasIdle ? cancelIdleCallback(id) : clearTimeout(id));
