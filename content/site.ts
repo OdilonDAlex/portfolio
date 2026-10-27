@@ -38,10 +38,10 @@ export const person = {
   email: "odilondalex2600@gmail.com",
   phone: { label: "+261 34 12 579 10", href: "tel:+261341257910" },
   links: [
-    { label: "LinkedIn", href: "https://www.linkedin.com/" },
-    { label: "GitHub", href: "https://github.com/" },
-    { label: "GitLab", href: "https://gitlab.com/" },
-    { label: "CodinGame", href: "https://www.codingame.com/" },
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/odilon-d-alex-nomenjanahary-0a8a57223" },
+    { label: "GitHub", href: "https://github.com/OdilonDAlex" },
+    { label: "GitLab", href: "https://gitlab.com/odilondalex2600" },
+    { label: "CodinGame", href: "https://www.codingame.com/profile/29ae55d9b67af40fa3d7d567363ec96a7453725" },
   ],
 };
 
