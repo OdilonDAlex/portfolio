@@ -2,6 +2,9 @@
 
 import { useEffect, useRef } from "react";
 
+// The dot is drawn at its largest size and scaled down, so it stays crisp when it grows over links.
+const REST_SCALE = 0.24;
+
 export default function Cursor() {
   const ref = useRef<HTMLDivElement>(null);
 
@@ -20,7 +23,7 @@ export default function Cursor() {
       s.y += (s.ty - s.y) * f;
       s.k += (s.tk - s.k) * (instant ? 1 : 0.14);
       s.o += (s.to - s.o) * 0.2;
-      el.style.transform = `translate3d(${s.x.toFixed(1)}px,${s.y.toFixed(1)}px,0) scale(${s.k.toFixed(3)})`;
+      el.style.transform = `translate3d(${s.x.toFixed(1)}px,${s.y.toFixed(1)}px,0) scale(${(s.k * REST_SCALE).toFixed(4)})`;
       el.style.opacity = s.o.toFixed(3);
       const settled =
         Math.abs(s.tx - s.x) < 0.1 && Math.abs(s.ty - s.y) < 0.1 && Math.abs(s.tk - s.k) < 1e-3 && Math.abs(s.to - s.o) < 1e-3;
